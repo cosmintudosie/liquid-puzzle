@@ -55,7 +55,7 @@ const passValidator = function () {
     },
     body: JSON.stringify(userCredentials),
   };
-  fetch(`http://localhost:5001/passCompare`, requestOptions)
+  fetch(`/passCompare`, requestOptions)
     .then((response) => response.json())
 
     .then((res) => {
