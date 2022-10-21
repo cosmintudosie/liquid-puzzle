@@ -1,0 +1,32 @@
+[
+  {
+    "fullName": "nae",
+    "mail": "daniel.popescu@yahoo.com",
+    "password": "$2b$10$XSNqHyrKU1jReP72UtcnAeB16PgbzEeIThEDxfgYR5qrbhvWSH/l."
+  },
+  {
+    "fullName": "nae",
+    "mail": "kokosan@gmail.com",
+    "password": "$2b$10$un61T4JIa6clR9Y9kbtE3uiRsJjx9.GALH3uDmHN/5mk6Q2dCbV/2"
+  },
+  {
+    "fullName": "nae",
+    "mail": "gheorghe@gmail.com",
+    "password": "$2b$10$fB5wJHMTcY6yYxsw0X4.aeMvPiX3/oosgevuSY7s.hO4EZ5GYDy0G"
+  },
+  {
+    "fullName": "koko",
+    "mail": "kokosan@gmail.com",
+    "password": "$2b$10$Fsl7sFFKMq5MWDL8GOuMgueb/kqJxmPKE3osiurbyme6TDIK79NaC"
+  },
+  {
+    "fullName": "cosmin",
+    "mail": "co@gmail.com",
+    "password": "$2b$10$0UWqnHjeuU3/qND6k0x81uWhCBc7wSxsSz5sLYkXdX8nB3iWkE8Va"
+  },
+  {
+    "fullName": "cos",
+    "mail": "cos@gmail.com",
+    "password": "$2b$10$e00t0T0lp4GlOOA3LNTSmeFddmuUQlmZhAFuOfMafjGmVHy6w2E6q"
+  }
+]

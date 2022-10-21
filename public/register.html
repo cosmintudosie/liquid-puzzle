@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liquid puzzle</title>
+    <link rel="stylesheet" type="text/css" href="app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <!-- <div><img id="logo" src="logo.jfif" /></div> -->
+      <div class="personal-items">
+        <div class="user-playing"></div>
+        <div class="personal-item">
+          <p>Moves left:</p>
+          <span class="moves">25</span>
+        </div>
+        <div class="personal-item">
+          <p>Total score:</p>
+          <span class="score">0</span>
+        </div>
+      </div>
+      <ul class="link-container">
+        <li class="links">
+          <a class="nav-link" id="register" href="#">Sign up </a>
+        </li>
+        <li class="links">
+          <a class="nav-link" id="login" href="#">Login </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-container">
+      <div class="announce element logo active">Please login</div>
+      <div class="form-container">
+        <form
+          action="http://localhost:5001/formPost"
+          method="POST"
+          class="register element"
+        >
+          <h2 class="form-title">Inregistrare</h2>
+
+          <div class="form-field">
+            <label for="fullName">Numele si prenumele</label>
+            <input name="fullName" type="text" class="fullName" required />
+          </div>
+          <div class="form-field">
+            <label for="mail">Adresa de e-mail</label>
+            <input name="mail" type="email" class="mail" required />
+          </div>
+          <div class="form-field">
+            <label for="password">Parola</label>
+            <div>
+              <input
+                name="password"
+                type="password"
+                class="password passType"
+                required
+              />
+              <i class="check far fa-eye"></i>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="confirmPassword">Confirmare parola</label>
+            <div>
+              <input
+                name="confirmPassword"
+                type="password"
+                class="confirmPassword passType"
+                required
+              />
+              <i class="check far fa-eye"></i>
+            </div>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+
+        <form class="login element">
+          <h2 class="form-title">Autentificare</h2>
+
+          <div class="form-field">
+            <label for="userMail">Adresa de e-mail</label>
+            <input name="userMail" type="email" class="userMail" required />
+          </div>
+          <div class="form-field">
+            <label for="userPassword">Parola</label>
+            <div>
+              <input
+                name="password"
+                type="password"
+                class="userPassword passType"
+                required
+              />
+              <i class="check far fa-eye"></i>
+            </div>
+          </div>
+          <button type="" class="btn authenticate">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="game" style="display: none">
+      <div class="shelf">
+        <div class="glass-container">
+          <div class="glass not-full"></div>
+        </div>
+        <div class="glass-container">
+          <div class="glass not-full"></div>
+        </div>
+        <div class="glass-container">
+          <div class="glass not-full"></div>
+        </div>
+        <div class="glass-container">
+          <div class="glass not-full"></div>
+        </div>
+      </div>
+      <div class="shelf">
+        <div class="glass-container">
+          <div class="glass not-full"></div>
+        </div>
+        <div class="glass-container">
+          <div class="glass not-full"></div>
+        </div>
+        <div class="glass-container">
+          <div class="glass not-full"></div>
+        </div>
+        <div class="glass-container">
+          <div class="glass not-full"></div>
+        </div>
+      </div>
+      <div class="win">
+        Congratulations!!! <br />
+        You Won!!!<button class="btn-ok">OK</button>
+      </div>
+      <div class="win lose">
+        No moves left!!! <br />
+        You Lose!!!<button class="btn-ok">OK</button>
+      </div>
+      <button class="btn-ok btn">New Game</button>
+    </div>
+
+    <script src="index.js" defer></script>
+  </body>
+</html>
